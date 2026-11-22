@@ -1,0 +1,56 @@
+{
+  "name": "@deepwhale-cn/dsh-legal-arbitration-agreement",
+  "version": "0.1.0",
+  "description": "仲裁法16/17条 要件审查",
+  "type": "module",
+  "license": "MIT",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "plugin",
+    "skill",
+    "legal-arbitration-agreement"
+  ],
+  "files": [
+    "lib",
+    "skill",
+    "bin",
+    "rules",
+    "docs",
+    "cordis.patch.yml",
+    "tests/fixtures",
+    "README.md"
+  ],
+  "main": "./lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./package.json": "./package.json"
+  },
+  "bin": {
+    "dsh-legal-arbitration-agreement": "bin/cli.mjs"
+  },
+  "engines": {
+    "dsh": ">=0.1.0-rc.6 <0.3.0",
+    "node": ">=18"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "dependencies": {
+    "@deepwhale-cn/dsh-guard-core": "^0.10.1"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/dsh-skill": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/feely0208/dsh-legal-arbitration-agreement.git"
+  },
+  "homepage": "https://www.deepwhale.org.cn/skills.html",
+  "bugs": {
+    "url": "https://github.com/feely0208/dsh-legal-arbitration-agreement/issues"
+  }
+}

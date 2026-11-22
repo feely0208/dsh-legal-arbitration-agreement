@@ -1,0 +1,4 @@
+# @deepwhale-cn/dsh-legal-arbitration-agreement 的组合层
+- insert:
+    - id: legal-arbitration-agreement
+      name: '@deepwhale-cn/dsh-legal-arbitration-agreement'
